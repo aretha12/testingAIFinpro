@@ -5,7 +5,7 @@ import numpy as np
 model = joblib.load("stunting_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
-st.set_page_config(page_title="Prediksi Stunting Balita", layout="centered")
+st.set_page_config(page_title="Prediksi Stunting Balita 🤱🏻", layout="centered")
 st.title("Prediksi Stunting Balita")
 
 st.markdown("""
