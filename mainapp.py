@@ -6,7 +6,7 @@ model = joblib.load("stunting_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
 st.set_page_config(page_title="Prediksi Stunting Balita 🤱🏻", layout="centered")
-st.title("Prediksi Stunting Balita")
+st.title("Prediksi Stunting Balita 🤱🏻")
 
 st.markdown("""
 Aplikasi ini memprediksi apakah balita terindikasi **stunting atau tidak**  
