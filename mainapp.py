@@ -5,6 +5,8 @@ import numpy as np
 model = joblib.load("testingBayi_random_forest.pkl")
 scaler = joblib.load("testingBayi_scaler.pkl")
 
+AKURASI_MODEL = 0.8712
+
 st.set_page_config(page_title="Prediksi Stunting Balita 🤱🏻", layout="centered")
 st.title("🧒 Prediksi Stunting Balita")
 
@@ -34,7 +36,7 @@ data_scaled = scaler.transform(data)
 
 if st.button("Prediksi Stunting"):
     pred = model.predict(data_scaled)[0]
-
+    st.metric("Akurasi Model (Validasi)", f"{AKURASI_MODEL*100:.2f}%")
     if pred == 1:
         st.error("⚠️ Balita **terindikasi stunting**.")
     else:
