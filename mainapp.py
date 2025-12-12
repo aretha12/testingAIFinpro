@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load("testingBayi_random_forest.pkl")
-scaler = joblib.load("testingBayi_scaler.pkl")
+model = joblib.load("cobaBayi_random_forest.pkl")
+scaler = joblib.load("cobaBayi_scaler.pkl")
 
 AKURASI_MODEL = 0.8712
 
