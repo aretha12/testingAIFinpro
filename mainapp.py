@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model = joblib.load("stunting_model.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("testingBayi_random_forest.pkl")
+scaler = joblib.load("testingBayi.pkl")
 
 st.set_page_config(page_title="Prediksi Stunting Balita 🤱🏻", layout="centered")
 st.title("🧒 Prediksi Stunting Balita")
