@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 model = joblib.load("testingBayi_random_forest.pkl")
-scaler = joblib.load("testingBayi.pkl")
+scaler = joblib.load("testingBayi_scaler.pkl")
 
 st.set_page_config(page_title="Prediksi Stunting Balita 🤱🏻", layout="centered")
 st.title("🧒 Prediksi Stunting Balita")
